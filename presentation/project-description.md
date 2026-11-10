@@ -1,0 +1,7 @@
+KriyaOS is a solar inverter maintenance web application that places deterministic safety as the absolute priority. The platform addresses the critical need for fail-closed safety verification in field maintenance, where AI suggestions cannot certify equipment as safe to touch and offline work introduces synchronization risks.
+
+The core solution combines a Next.js frontend with a deterministic safety gate that is fail-closed and BLOCK-authoritative — no AI output, UI action, or background process can override a BLOCK decision. Offline-first maintenance drafts are stored in localStorage with explicit, user-triggered sync only; no background or implicit sync occurs on reconnection. Conflict detection and resolution are built into the sync workflow, and corrupted localStorage is handled gracefully by preserving raw data.
+
+Advisory-only AI integration (Gemini/Local Ollama via Ollama-compatible HTTP) provides recommendations that are explicitly labeled and never used to determine electrical safety or override safety decisions. All external integrations (Gemini Live, Firebase, BigQuery, Nano Banana, Lyria, Agent Skills, ERP/CMMS) are truthfully statused as unconfigured, blocked, or local simulator only — never implied live.
+
+Validated by 123/123 Vitest passed, 17/17 Playwright E2E passed, and watchdog 7/7 passed. The production build completes exit 0 with `.next` in D:. C: repository at `C:\Users\ddsai\Downloads\KriyaOS` remains untouched. All safety invariants preserved.

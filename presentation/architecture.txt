@@ -1,0 +1,98 @@
+KriyaOS — System Architecture Diagram
+
+================================================================
+NEXT.JS UI (port 8080)                API ROUTES (Next.js API)
+        │                                                                   │
+        ├─ /                                                                   │
+        │                                                                   │
+        ├─ /health          ──────► {ok: true, app: "KriyaOS", …}              │
+        │                                                                   │
+        ├─ /maintenance           POST create maintenance record            │
+        │         GET   /:id        retrieve maintenance record              │
+        │         POST /:id/sync    draft-notes/sync (explicit, idempotent)   │
+        │                                                                   │
+        ├─ /integrations/status   ──────► truthful status, all unconfigured   │
+        │                                                                   │
+        └─ /sw.js        service worker ────► never caches /api/*           │
+                                                                     │
+================================================================
+DETERMINISTIC SAFETY GATE (authoritative)
+        ↑      ↑      ↑
+        │      │      │
+        │      │      └─ ensures verificationHistory unchanged after sync
+        │      └─ ensures currentVerification unchanged after sync
+        └─ ensures status unchanged after sync
+                 (all verified by contract tests)
+
+        │
+        │   Problem description enters gate
+        │
+        ▼
+
+GEMMA / OLlama ADVISORY INTEGRATION
+        │
+        │   Ollama-compatible localhost HTTP (127.0.0.1:11434)
+        │   Model: gemma3:1b (806 MB, Q4_K_M quantization)
+        │   Timeout: configurable (default 8000ms)
+        │   Capability: completion only
+        │   Advisory label: caution/review/uncertain/clear
+        │   Explicitly: never overrides deterministic BLOCK
+        │   Capability note: "advisory only; never overrides"
+        ▼
+
+LOCAL CMMS SIMULATOR (synthetic only)
+        │
+        │   Mode: disabled, provider: none, hasCredentials: false
+        │   Export formats: JSON, CSV
+        │   Data labels: sessionId, eventType, dataLabel
+        │   Consent: required; no fabricated real data
+        │   No external upload; no real robot commands
+        ▼
+
+TRUTHFUL INTEGRATION STATUS
+        │
+        │   All endpoints return explicit status:
+        │   - Gemini diagnosis: unconfigured
+        │   - Gemini Live: unconfigured
+        │   - Nano Banana: not implemented
+        │   - Lyria: not implemented (hook only)
+        │   - Agent Skills: not integrated
+        │   - Firebase/Firestore: unconfigured
+        │   - BigQuery: schema validation only, no ingest
+        │   - Cloud Run: build_verified_not_deployed
+        │   - ERP/CMMS: local simulator only
+        ▼
+
+CLOUD RUN (planned, not deployed)
+        │
+        │   Dockerfile present, next.config.ts output:"standalone"
+        │   .dockerignore, /api/health verified
+        │   NOT deployed — no gcloud, no Docker build, no authorization
+        ▼
+
+OFFLINE DRAFT QUEUE (localStorage)
+        │
+        │   Origin-scoped localStorage key: kriyaos.maintenanceDraftQueue.v1
+        │   States: pending, synced, conflict, sync_failed
+        │   Idempotency keys for sync prevention
+        │   Conflict detection/resolution UI
+        │   Corrupted storage refusal (preserves raw data)
+        │   No background sync — explicit only
+        ▼
+
+SYNTHETIC EQUIPMENT ONLY
+        │
+        │   All demo uses confirmed de-energized/mock data
+        │   No live hardware connected
+        │   No electrical safety claims from AI
+        │   BLOCK remains authoritative throughout
+        ▼
+
+================================================================
+Key Principles (displayed alongside diagram):
+- Deterministic gate: BLOCK is absolute, never overridable
+- Advisory only: AI output never certifies safe-to-touch
+- Truthful status: no green "connected" from config alone
+- Offline-first: localStorage, explicit sync only
+- No background operations: reconnect does not auto-sync
+- Synthetic equipment: all demo confirmed de-energized

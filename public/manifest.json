@@ -1,0 +1,10 @@
+{
+  "name": "KriyaOS — Safety-First AI Copilot for Industrial Field Maintenance",
+  "short_name": "KriyaOS",
+  "description": "AI-assisted maintenance. Safety-controlled decisions. Prototype for synthetic/confirmed de-energized solar inverter demos only.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": []
+}
