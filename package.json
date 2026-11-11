@@ -1,5 +1,5 @@
 {
-  "name": "kriyaos",
+  "name": "percepta",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -33,5 +33,5 @@
     "typescript": "^5",
     "vitest": "^2.1.9"
   },
-  "description": "KriyaOS - AI-powered industrial repair assistant (solar inverter maintenance prototype)"
+  "description": "Percepta - Physical-world multimodal vision copilot with real-time AR, self-learning memory, and action verification powered by Google Gemini"
 }

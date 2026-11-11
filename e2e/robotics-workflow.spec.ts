@@ -26,7 +26,7 @@ async function createRecord(request: APIRequestContext, overrides: Record<string
   expect(res.ok(), `create failed ${res.status()} ${await res.text()}`).toBeTruthy();
   const body = await res.json();
   expect(body.ok).toBeTruthy();
-  return body.record as Record<string, unknown>;
+  return body.record as Record<string, any>;
 }
 
 async function openRoboticsPanel(page: Page) {

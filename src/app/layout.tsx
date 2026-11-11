@@ -1,39 +1,25 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ServiceWorkerRegistration } from '@/components/system/ServiceWorkerRegistration';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
-  title: 'KriyaOS | Safety-First AI Copilot for Industrial Field Maintenance',
+  title: 'PERCEPTA | Botanical Multimodal Vision AI Copilot',
   description:
-    'AI-assisted maintenance. Safety-controlled decisions. Prototype for synthetic/confirmed de-energized solar inverter demos only. Deterministic safety gate is authoritative.',
-  applicationName: 'KriyaOS',
+    'Percepta — Physical-World Multimodal Intelligence & Continuous Self-Learning Memory powered by Google DeepMind & Google Cloud.',
+  applicationName: 'Percepta',
   manifest: '/manifest.json',
 };
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0f766e',
+  themeColor: '#F7F3EB',
 };
 
-export default function RootLayout({ children }: LayoutProps<'/'>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full bg-background text-foreground">
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full bg-[#F7F3EB] text-[#262D24] selection:bg-[#E5A98C]/40 selection:text-[#262D24]">
         <ServiceWorkerRegistration />
         {children}
       </body>

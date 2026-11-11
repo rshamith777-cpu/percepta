@@ -1,10 +1,12 @@
-import { AppShell } from '@/components/AppShell';
-import { DiagnosisWorkbench } from '@/components/diagnosis/DiagnosisWorkbench';
+'use client';
+
+import React from 'react';
+import { BotanicalCameraCopilot } from '@/components/botanical/BotanicalCameraCopilot';
 
 export default function Home() {
   return (
-    <AppShell>
-      <DiagnosisWorkbench />
-    </AppShell>
+    <main className="min-h-screen bg-[#F7F3EB]">
+      <BotanicalCameraCopilot />
+    </main>
   );
 }

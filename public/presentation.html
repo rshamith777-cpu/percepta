@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRIYA-OS | 10-Slide Pitch Deck (Google Buildathon India 2026)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #070b14;
+      color: #e2e8f0;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .slide { display: none; }
+    .slide.active { display: flex; }
+    .cyber-card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-4 sm:p-8">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between border-b border-cyan-500/20 pb-4">
+    <div class="flex items-center gap-3">
+      <div class="h-8 w-8 rounded-lg bg-cyan-500/10 border border-cyan-400 text-cyan-400 flex items-center justify-center font-black">
+        ⚡
+      </div>
+      <div>
+        <h1 class="text-sm font-bold tracking-widest text-cyan-400 uppercase mono">KRIYA-OS</h1>
+        <p class="text-xs text-slate-400">Startup Buildathon India 2026 Pitch Deck</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span id="slideIndicator" class="mono text-xs text-cyan-300 bg-cyan-950/60 border border-cyan-800 px-3 py-1 rounded-full">
+        Slide 1 / 10
+      </span>
+      <a href="/" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+        Open Live HUD ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- Slide Container -->
+  <main class="flex-1 flex items-center justify-center py-6">
+
+    <!-- SLIDE 1: Title -->
+    <div class="slide active flex-col items-center text-center max-w-4xl space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/40 bg-cyan-950/40 text-cyan-300 text-xs mono">
+        <span>Google DeepMind & Cloud Ecosystem</span>
+      </div>
+      <h2 class="text-4xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500">
+        KRIYA-OS
+      </h2>
+      <p class="text-lg sm:text-2xl text-slate-300 font-medium max-w-2xl">
+        The World's First <span class="text-cyan-400 font-bold">"Zero-UI, Zero-CAD"</span> Multimodal Field Engineer Copilot
+      </p>
+      <p class="text-sm text-slate-400 max-w-xl leading-relaxed">
+        Turning any ₹10,000 Android smartphone into an expert vernacular engineer that watches broken machines, listens to regional Indian dialects, generates photorealistic AR repair overlays, and automates ERP workflows.
+      </p>
+      <div class="flex flex-wrap gap-2 justify-center pt-4 text-xs mono text-slate-400">
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Gemini Omni</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Gemini Live</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Nano Banana</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Lyria</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Gemma (<28ms)</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Agent Skills</span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">BigQuery</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Problem -->
+    <div class="slide flex-col max-w-4xl space-y-6">
+      <div class="border-l-4 border-red-500 pl-4">
+        <span class="text-xs text-red-400 font-bold uppercase mono">The Problem</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">The Physical-World Crisis: The 29.5M Technician Deficit</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="cyber-card p-5 rounded-2xl border-l-2 border-l-red-500">
+          <h3 class="font-bold text-red-300">1. Massive Talent Shortage</h3>
+          <p class="mt-2 text-slate-300 text-xs leading-relaxed">
+            India is adding gigawatts of solar and millions of EV chargers, but lacks 29.5 million skilled technicians to service them.
+          </p>
+        </div>
+        <div class="cyber-card p-5 rounded-2xl border-l-2 border-l-red-500">
+          <h3 class="font-bold text-red-300">2. Expensive Machine Downtime</h3>
+          <p class="mt-2 text-slate-300 text-xs leading-relaxed">
+            Equipment outages in Tier-2/3 cities cost ₹80,000 to ₹15,00,000 per incident waiting 48-72 hours for senior OEM engineers to travel.
+          </p>
+        </div>
+        <div class="cyber-card p-5 rounded-2xl border-l-2 border-l-red-500">
+          <h3 class="font-bold text-red-300">3. 1,500-Page English PDFs Fail</h3>
+          <p class="mt-2 text-slate-300 text-xs leading-relaxed">
+            A technician holding a wrench in a dark 45°C cabinet cannot read complex 1,500-page English PDF schematics on a phone.
+          </p>
+        </div>
+        <div class="cyber-card p-5 rounded-2xl border-l-2 border-l-red-500">
+          <h3 class="font-bold text-red-300">4. Legacy AR Glasses Failed</h3>
+          <p class="mt-2 text-slate-300 text-xs leading-relaxed">
+            HoloLens costs $3,500+ and takes 4-8 weeks of expensive 3D CAD modeling per machine. Impossible for India's 63M MSMEs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Solution -->
+    <div class="slide flex-col max-w-4xl space-y-6">
+      <div class="border-l-4 border-cyan-400 pl-4">
+        <span class="text-xs text-cyan-400 font-bold uppercase mono">The Solution</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">"Zero-UI, Zero-CAD" Multimodal Field Copilot</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="cyber-card p-4 rounded-xl">
+          <span class="text-xl">📹</span>
+          <h3 class="font-bold text-cyan-300 mt-2">1. Point Camera & Speak</h3>
+          <p class="mt-1 text-slate-400">
+            Technician points phone camera at open machine and asks in Hinglish, Hindi, or Tamil via Gemini Live.
+          </p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl border border-cyan-500/40">
+          <span class="text-xl">⚡</span>
+          <h3 class="font-bold text-emerald-300 mt-2">2. Nano Banana AR Overlay</h3>
+          <p class="mt-1 text-slate-400">
+            Dynamically renders glowing neon bounding boxes, arrows, and step badges on the actual photo in &lt;3s. No 3D CAD needed!
+          </p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl">
+          <span class="text-xl">🛡️</span>
+          <h3 class="font-bold text-amber-300 mt-2">3. Gemma &amp; Lyria</h3>
+          <p class="mt-1 text-slate-400">
+            Lyria spatial audio guides hands eyes-free; on-device Gemma guards worker safety in &lt;28ms offline without Wi-Fi.
+          </p>
+        </div>
+      </div>
+      <div class="cyber-card p-4 rounded-xl bg-slate-900/90 text-xs flex items-center justify-between">
+        <div>
+          <strong class="text-cyan-300">Autonomous Closure:</strong> Google Agent Skills deduct warehouse parts, issue purchase orders, and record BigQuery trajectories.
+        </div>
+        <span class="text-emerald-400 font-bold">100% Google Cloud</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Product Proof -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-emerald-400 pl-4">
+        <span class="text-xs text-emerald-400 font-bold uppercase mono">Live Prototype</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">Working Product Proof: Cyber-HUD Dashboard</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="cyber-card p-4 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mono text-cyan-400 pb-2 border-b border-slate-800">
+              <span>Panel 1 &amp; 2: Multimodal Diagnosis</span>
+              <span class="text-emerald-400">LIVE</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Real-time video feed + Nano Banana glowing AR overlay drawing step badges onto Solar Inverter Relay K1 with vernaclar voice output.
+            </p>
+          </div>
+          <div class="mt-3 p-3 bg-black/80 rounded border border-emerald-500/40 text-[11px] mono text-emerald-300">
+            ✓ AR Target Box: [35%, 28%, 28%, 32%]<br>
+            ✓ Speech: "Relay K1 ke terminals par carbon build-up hai..."
+          </div>
+        </div>
+        <div class="cyber-card p-4 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mono text-red-400 pb-2 border-b border-slate-800">
+              <span>Gemma Edge Safety Watchdog</span>
+              <span class="text-red-400">&lt;28ms OFFLINE</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Instant on-device hazard alert: flashing red border, dissonance alarm, and PPE compliance warning if an ungloved hand approaches 600V DC bus.
+            </p>
+          </div>
+          <div class="mt-3 p-3 bg-red-950/60 rounded border border-red-500 text-[11px] mono text-red-300">
+            ⚠️ HAZARD: Ungloved hand entering high-voltage DC corridor.<br>
+            Triggered locally without cloud round-trip!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: 9-Tool Google Symphony -->
+    <div class="slide flex-col max-w-4xl space-y-4">
+      <div class="border-l-4 border-cyan-400 pl-4">
+        <span class="text-xs text-cyan-400 font-bold uppercase mono">Architecture</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">The 9-Tool Google AI Symphony</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-left text-slate-300 mono cyber-card rounded-xl overflow-hidden">
+          <thead class="bg-slate-900 text-cyan-400 uppercase text-[10px]">
+            <tr>
+              <th class="p-2.5">Google Tool</th>
+              <th class="p-2.5">Role in KriyaOS</th>
+              <th class="p-2.5">Key Metric / Differentiator</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/80">
+            <tr><td class="p-2 text-cyan-300 font-bold">1. Gemini Omni</td><td class="p-2">1M+ Token Grounded Diagnostic Brain</td><td class="p-2 text-slate-400">Cites exact page/section; 0% hallucination</td></tr>
+            <tr><td class="p-2 text-cyan-300 font-bold">2. Gemini Live</td><td class="p-2">Vernacular Voice &amp; Video Streaming</td><td class="p-2 text-slate-400">Hinglish, Hindi, Tamil, Marathi STT/TTS</td></tr>
+            <tr><td class="p-2 text-emerald-300 font-bold">3. Nano Banana</td><td class="p-2">Zero-CAD Visual AR Overlay Engine</td><td class="p-2 text-slate-400">&lt;3 second photo annotations (₹0 3D CAD)</td></tr>
+            <tr><td class="p-2 text-amber-300 font-bold">4. Lyria</td><td class="p-2">Eyes-Free Spatial Acoustic Telemetry</td><td class="p-2 text-slate-400">Harmonic pulse, alignment chime, buzzer</td></tr>
+            <tr><td class="p-2 text-emerald-300 font-bold">5. Gemma</td><td class="p-2">On-Device Edge Life-Safety Watchdog</td><td class="p-2 text-slate-400">&lt;28ms latency; 100% offline resilient</td></tr>
+            <tr><td class="p-2 text-blue-300 font-bold">6. Google Agent Skills</td><td class="p-2">Autonomous ERP &amp; Part Reorder Executor</td><td class="p-2 text-slate-400">Standardized .agent/skills/ package</td></tr>
+            <tr><td class="p-2 text-purple-300 font-bold">7. Google AI Studio</td><td class="p-2">Prompt Schema Hub &amp; Free API Key Engine</td><td class="p-2 text-slate-400">100% free development tier</td></tr>
+            <tr><td class="p-2 text-cyan-300 font-bold">8. Google Antigravity</td><td class="p-2">Autonomous Agentic Development Platform</td><td class="p-2 text-slate-400">Reduced dev time from 6 weeks to 3 hours</td></tr>
+            <tr><td class="p-2 text-blue-300 font-bold">9. BigQuery &amp; Cloud</td><td class="p-2">Embodied AI Robotics Data Warehouse</td><td class="p-2 text-slate-400">Proprietary physical repair dataset</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: Technical Architecture -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-cyan-400 pl-4">
+        <span class="text-xs text-cyan-400 font-bold uppercase mono">Edge-to-Cloud Pipeline</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">End-to-End Technical Architecture</h2>
+      </div>
+      <div class="cyber-card p-5 rounded-2xl mono text-xs space-y-4">
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800">
+          <span class="text-cyan-300 font-bold">1. Edge Layer (Client PWA):</span>
+          <span class="text-slate-400">Camera / Mic Stream + Local Gemma (<28ms) + Lyria Web Audio</span>
+        </div>
+        <div class="text-center text-cyan-400">▼ Secure Relays</div>
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-cyan-500/40">
+          <span class="text-emerald-300 font-bold">2. DeepMind Multimodal Core:</span>
+          <span class="text-slate-400">Gemini Live (Speech) + Gemini Omni (1M+ Token Grounding) + Nano Banana (AR)</span>
+        </div>
+        <div class="text-center text-cyan-400">▼ Structured JSON Tool Actions</div>
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800">
+          <span class="text-purple-300 font-bold">3. Enterprise &amp; Robotics Layer:</span>
+          <span class="text-slate-400">Google Agent Skills (SAP/Zoho Auto-PO) + BigQuery Embodied AI Stream</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: DeepMind Moat -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-purple-400 pl-4">
+        <span class="text-xs text-purple-400 font-bold uppercase mono">The Moat</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">The Embodied AI Robotics Data Flywheel</h2>
+      </div>
+      <div class="cyber-card p-5 rounded-2xl space-y-4 text-xs">
+        <p class="text-slate-300 leading-relaxed text-sm">
+          Humanoid robotics companies need rich physical trajectory data of human hands repairing real machines to train future maintenance robots.
+        </p>
+        <div class="p-3 bg-purple-950/40 rounded-xl border border-purple-800 mono text-purple-200">
+          <strong>BigQuery Streaming Schema:</strong><br>
+          Trajectory = ⟨ Before Photo + Fault Audio + Diagnostic Chain + Tool Action + After Photo ⟩
+        </div>
+        <p class="text-slate-400">
+          Every verified repair on KriyaOS automatically structures and streams this trajectory into Google BigQuery, building the world's most valuable proprietary dataset for physical-world robotics.
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: Market & Business Model -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-emerald-400 pl-4">
+        <span class="text-xs text-emerald-400 font-bold uppercase mono">Market &amp; Unit Economics</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">Unit Economics &amp; $14.8B Market Size</h2>
+      </div>
+      <div class="grid grid-cols-3 gap-3 text-center mono text-xs">
+        <div class="cyber-card p-4 rounded-xl">
+          <p class="text-slate-400 text-[10px]">GLOBAL TAM</p>
+          <p class="text-xl font-bold text-cyan-400 mt-1">$14.8 B</p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl">
+          <p class="text-slate-400 text-[10px]">INDIA SAM</p>
+          <p class="text-xl font-bold text-emerald-400 mt-1">$1.85 B</p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl">
+          <p class="text-slate-400 text-[10px]">24M ARR SOM</p>
+          <p class="text-xl font-bold text-purple-400 mt-1">$11.34 M</p>
+        </div>
+      </div>
+      <div class="cyber-card p-4 rounded-xl text-xs space-y-2">
+        <div class="flex justify-between border-b border-slate-800 pb-2">
+          <span>Enterprise Subscription (B2B SaaS):</span>
+          <strong class="text-emerald-400">₹1,499 ($18) / technician seat / month</strong>
+        </div>
+        <div class="flex justify-between border-b border-slate-800 pb-2">
+          <span>Monthly Google Cloud / AI Cost per Seat:</span>
+          <strong class="text-slate-300">$2.40 (75% savings via Vertex Context Caching)</strong>
+        </div>
+        <div class="flex justify-between pt-1">
+          <span>Gross Margin:</span>
+          <strong class="text-cyan-400 text-sm">86.6% Gross Margin</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: Founding Team -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-cyan-400 pl-4">
+        <span class="text-xs text-cyan-400 font-bold uppercase mono">Founding Team</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">AI-Native Builders Shipping 10x Faster</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="cyber-card p-4 rounded-xl">
+          <div class="h-10 w-10 rounded-full bg-cyan-900 border border-cyan-400 flex items-center justify-center font-bold text-cyan-300">
+            F1
+          </div>
+          <h3 class="font-bold text-slate-200 mt-2">Founder &amp; AI Lead</h3>
+          <p class="text-[11px] text-slate-400 mt-1">
+            System architecture, prompt schema design in Google AI Studio, and industrial field workflow research.
+          </p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl">
+          <div class="h-10 w-10 rounded-full bg-emerald-900 border border-emerald-400 flex items-center justify-center font-bold text-emerald-300">
+            F2
+          </div>
+          <h3 class="font-bold text-slate-200 mt-2">Co-Founder &amp; Cloud Lead</h3>
+          <p class="text-[11px] text-slate-400 mt-1">
+            Google Antigravity agent orchestration, Google Agent Skills integration, and BigQuery streaming data pipelines.
+          </p>
+        </div>
+        <div class="cyber-card p-4 rounded-xl">
+          <div class="h-10 w-10 rounded-full bg-purple-900 border border-purple-400 flex items-center justify-center font-bold text-purple-300">
+            F3
+          </div>
+          <h3 class="font-bold text-slate-200 mt-2">Co-Founder &amp; Edge Lead</h3>
+          <p class="text-[11px] text-slate-400 mt-1">
+            Gemma on-device MediaPipe watchdog integration, hardware testing, and field workshop pilots.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 10: Roadmap -->
+    <div class="slide flex-col max-w-4xl space-y-5">
+      <div class="border-l-4 border-emerald-400 pl-4">
+        <span class="text-xs text-emerald-400 font-bold uppercase mono">Roadmap</span>
+        <h2 class="text-3xl font-extrabold text-slate-100">Roadmap to Dec 2 Finale ($10,000 Prize)</h2>
+      </div>
+      <div class="cyber-card p-5 rounded-2xl mono text-xs space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="h-6 w-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">✓</span>
+          <div><strong class="text-slate-200">Nov 13:</strong> Working PoC &amp; Pitch Deck Submission on Hack2skill.</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="h-6 w-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold shrink-0">2</span>
+          <div><strong class="text-slate-200">Nov 20-21 (City Buildathon):</strong> Live physical hardware demonstration on router/inverter prop before Google mentors.</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="h-6 w-6 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold shrink-0">3</span>
+          <div><strong class="text-slate-200">Nov 23-27:</strong> 3 on-ground field pilots with Tier-2 solar EPC maintenance teams.</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="h-6 w-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">★</span>
+          <div><strong class="text-amber-300">Dec 2 (Grand Finale, Google Bengaluru):</strong> Win Top 10 &amp; USD 10,000 Prize to scale KriyaOS across 150 enterprise contractors.</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Controls Footer -->
+  <footer class="flex items-center justify-between border-t border-slate-800 pt-4 text-xs">
+    <div class="text-slate-500 mono">
+      Use <kbd class="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">←</kbd> <kbd class="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">→</kbd> or buttons to navigate
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="prevBtn" class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-200 font-bold transition">
+        ← Previous
+      </button>
+      <button id="nextBtn" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/20">
+        Next →
+      </button>
+    </div>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicator = document.getElementById('slideIndicator');
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      indicator.textContent = `Slide ${index + 1} / ${slides.length}`;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        if (currentSlide < slides.length - 1) {
+          currentSlide++;
+          showSlide(currentSlide);
+        }
+      } else if (e.key === 'ArrowLeft') {
+        if (currentSlide > 0) {
+          currentSlide--;
+          showSlide(currentSlide);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+

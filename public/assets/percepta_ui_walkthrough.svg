@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="auto" style="background:#F7F3EB; font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">
+  <defs>
+    <filter id="clay-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="6" dy="10" stdDeviation="8" flood-color="#262D24" flood-opacity="0.08" />
+      <feDropShadow dx="-4" dy="-4" stdDeviation="6" flood-color="#FFFFFF" flood-opacity="0.9" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F7F3EB" rx="16"/>
+
+  <!-- Top Editorial Header Bar -->
+  <rect x="0" y="0" width="1200" height="64" fill="#FAF7F0" filter="url(#clay-shadow)"/>
+  <rect x="24" y="14" width="36" height="36" rx="10" fill="#E5A98C"/>
+  <text x="32" y="38" font-size="20">🌿</text>
+  <text x="70" y="34" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#262D24" letter-spacing="1">PERCEPTA</text>
+  <rect x="180" y="20" width="160" height="24" rx="12" fill="#F2DC91"/>
+  <text x="192" y="36" font-size="10" font-weight="bold" fill="#262D24">LIVE AR &bull; SELF-LEARNING BRAIN</text>
+
+  <!-- Header Right Pills -->
+  <rect x="680" y="18" width="150" height="28" rx="14" fill="#FAF7F0" stroke="#262D24" stroke-opacity="0.15"/>
+  <text x="696" y="36" font-size="11" font-family="monospace" fill="#262D24">🔑 AIzaSy... (Active)</text>
+  <rect x="840" y="18" width="130" height="28" rx="14" fill="#E5A98C"/>
+  <text x="852" y="36" font-size="11" font-weight="bold" fill="#262D24">🔄 Auto-Capture: ON</text>
+  <rect x="980" y="18" width="195" height="28" rx="14" fill="#C4D1B8"/>
+  <circle cx="996" cy="32" r="4" fill="#262D24"/>
+  <text x="1008" y="36" font-size="11" font-weight="bold" fill="#262D24">Gemma Watchdog: ACTIVE</text>
+
+  <!-- Left Sidebar (Butter Yellow) -->
+  <g transform="translate(24, 84)" filter="url(#clay-shadow)">
+    <rect width="360" height="570" rx="24" fill="#F2DC91"/>
+    
+    <!-- Header of Sidebar -->
+    <text x="24" y="36" font-size="20">🧠</text>
+    <text x="54" y="34" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#262D24">SELF-LEARNING BRAIN</text>
+    <rect x="280" y="18" width="56" height="22" rx="11" fill="#FAF7F0"/>
+    <text x="294" y="33" font-size="11" font-weight="bold" fill="#262D24">Lvl 4</text>
+
+    <!-- XP Bar -->
+    <text x="24" y="68" font-size="11" font-weight="600" fill="#262D24">Brain XP: 385 / 500 (77%)</text>
+    <rect x="24" y="76" width="312" height="10" rx="5" fill="#FAF7F0"/>
+    <rect x="24" y="76" width="240" height="10" rx="5" fill="#E5A98C"/>
+
+    <!-- Specimen Visual Journal Strip (Upgrade 3) -->
+    <text x="24" y="112" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#262D24">FIELD SPECIMEN VISUAL HISTORY (4)</text>
+    <g transform="translate(24, 122)">
+      <rect x="0" y="0" width="70" height="74" rx="14" fill="#FAF7F0"/>
+      <rect x="8" y="8" width="54" height="42" rx="8" fill="#C4D1B8" opacity="0.6"/>
+      <text x="26" y="34" font-size="18">🧃</text>
+      <text x="10" y="64" font-size="9" font-weight="bold" fill="#262D24">PET Bottle</text>
+
+      <rect x="78" y="0" width="70" height="74" rx="14" fill="#FAF7F0"/>
+      <rect x="86" y="8" width="54" height="42" rx="8" fill="#E5A98C" opacity="0.6"/>
+      <text x="104" y="34" font-size="18">🔌</text>
+      <text x="88" y="64" font-size="9" font-weight="bold" fill="#262D24">USB-C Cable</text>
+
+      <rect x="156" y="0" width="70" height="74" rx="14" fill="#FAF7F0"/>
+      <rect x="164" y="8" width="54" height="42" rx="8" fill="#C4D1B8" opacity="0.6"/>
+      <text x="182" y="34" font-size="18">☕</text>
+      <text x="166" y="64" font-size="9" font-weight="bold" fill="#262D24">Ceramic Cup</text>
+
+      <rect x="234" y="0" width="70" height="74" rx="14" fill="#FAF7F0"/>
+      <rect x="242" y="8" width="54" height="42" rx="8" fill="#E5A98C" opacity="0.6"/>
+      <text x="260" y="34" font-size="18">🪴</text>
+      <text x="246" y="64" font-size="9" font-weight="bold" fill="#262D24">Fern Plant</text>
+    </g>
+
+    <!-- Learned Behavioral Rules -->
+    <text x="24" y="222" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#262D24">LEARNED CONTEXT RULES (Injected into Gemini)</text>
+    <rect x="24" y="232" width="312" height="62" rx="12" fill="#FAF7F0"/>
+    <text x="36" y="252" font-size="11" font-weight="bold" fill="#262D24">Empty PET Plastic Bottle</text>
+    <rect x="260" y="240" width="64" height="16" rx="8" fill="#D1FAE5"/>
+    <text x="272" y="252" font-size="9" font-weight="bold" fill="#065F46">99.8% Conf</text>
+    <text x="36" y="272" font-size="10" fill="#262D24" opacity="0.75">Detach HDPE cap before crushing; segregated recycling stream.</text>
+
+    <!-- Universal Multi-Provider Failover Card -->
+    <text x="24" y="318" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#262D24">UNIVERSAL MULTI-PROVIDER ENGINE</text>
+    <rect x="24" y="328" width="312" height="135" rx="14" fill="#FAF7F0"/>
+    <text x="36" y="350" font-size="11" font-weight="bold" fill="#262D24">Primary: Google AI Studio</text>
+    <text x="36" y="368" font-size="10" fill="#262D24" opacity="0.75">&bull; Active: gemini-3.5-flash-lite (1.2s response)</text>
+    <text x="36" y="386" font-size="10" fill="#262D24" opacity="0.75">&bull; Open Weights: gemma-3-27b-it cascade</text>
+    <text x="36" y="412" font-size="11" font-weight="bold" fill="#262D24">Failover Backup: Groq Cloud (gsk_...)</text>
+    <text x="36" y="430" font-size="10" fill="#262D24" opacity="0.75">&bull; Instant fallback on 429/503 rate limits</text>
+    <rect x="36" y="442" width="80" height="14" rx="7" fill="#DCFCE7"/>
+    <text x="44" y="452" font-size="8" font-weight="bold" fill="#15803D">FAILOVER READY</text>
+
+    <!-- BigQuery Export Button (Upgrade 6) -->
+    <rect x="24" y="490" width="312" height="44" rx="22" fill="#E5A98C"/>
+    <text x="56" y="517" font-size="12" font-weight="bold" fill="#262D24">📥 Export Brain &amp; BigQuery Log (.json)</text>
+  </g>
+
+  <!-- Right Main Area: Viewfinder + Nano Banana AR (Top) -->
+  <g transform="translate(408, 84)" filter="url(#clay-shadow)">
+    <rect width="768" height="280" rx="24" fill="#C4D1B8"/>
+    <text x="24" y="32" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#262D24">LIVE CAMERA SCANNER VIEWPORT</text>
+    <text x="640" y="30" font-size="11" font-weight="bold" fill="#065F46">&bull; CAMERA LIVE (30 FPS)</text>
+
+    <!-- Viewfinder Screen -->
+    <rect x="24" y="48" width="720" height="210" rx="16" fill="#1A2018"/>
+    
+    <!-- Scanned Object Illustration (Mock Bottle) -->
+    <g transform="translate(320, 65)">
+      <rect x="20" y="20" width="50" height="120" rx="14" fill="#38A169" opacity="0.4" stroke="#FAF7F0" stroke-dasharray="4"/>
+      <rect x="32" y="8" width="26" height="16" rx="4" fill="#E5A98C"/>
+
+      <!-- 3D Clay Bounding Box Overlay -->
+      <rect x="10" y="0" width="70" height="150" rx="16" fill="#E5A98C" fill-opacity="0.2" stroke="#E5A98C" stroke-width="2"/>
+      <rect x="10" y="-12" width="130" height="20" rx="10" fill="#E5A98C"/>
+      <text x="18" y="2" font-size="9" font-weight="bold" fill="#262D24">PET JUICE BOTTLE (99.4%)</text>
+
+      <!-- Precision Target Bullseye Pin (Upgrade 1) -->
+      <circle cx="45" cy="16" r="14" fill="#E5A98C" opacity="0.4"/>
+      <circle cx="45" cy="16" r="8" fill="#E5A98C" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="45" cy="16" r="2.5" fill="#FFFFFF"/>
+      <rect x="68" y="6" width="130" height="20" rx="10" fill="#FAF7F0" filter="url(#clay-shadow)"/>
+      <text x="76" y="20" font-size="9" font-weight="bold" fill="#262D24">🎯 Target: HDPE Twist Cap</text>
+    </g>
+  </g>
+
+  <!-- Right Main Area: AI Dialogue & Before/After Loop (Bottom) -->
+  <g transform="translate(408, 382)" filter="url(#clay-shadow)">
+    <rect width="768" height="272" rx="24" fill="#FAF7F0"/>
+    <text x="24" y="32" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#262D24">LIVE AI DIALOGUE &amp; ACTION SOLUTIONS</text>
+    
+    <!-- Spoken Speech Bubble -->
+    <rect x="24" y="48" width="720" height="65" rx="16" fill="#F7F3EB"/>
+    <text x="40" y="72" font-size="12" fill="#262D24" font-weight="600">"Recognized PET Grade 1 Plastic Bottle. Twist off the HDPE cap to allow mechanical sorting, then crush vertically to save 45g CO2."</text>
+    <text x="40" y="94" font-size="10" fill="#262D24" opacity="0.65">🔊 Spoken Vernacular (English/Hindi/Tamil/Marathi) &bull; Spatial Lyria Audio Chime</text>
+
+    <!-- 1-Click Smart Action Pills (Upgrade 5) -->
+    <text x="24" y="134" font-family="Georgia, serif" font-size="11" font-weight="bold" fill="#262D24">REAL-WORLD SMART ACTION LINKS:</text>
+    <g transform="translate(24, 144)">
+      <rect x="0" y="0" width="180" height="30" rx="15" fill="#E5A98C"/>
+      <text x="16" y="19" font-size="10" font-weight="bold" fill="#262D24">🛒 Google Shopping &rarr;</text>
+
+      <rect x="190" y="0" width="180" height="30" rx="15" fill="#C4D1B8"/>
+      <text x="206" y="19" font-size="10" font-weight="bold" fill="#262D24">📍 Nearby Recycling on Maps &rarr;</text>
+
+      <rect x="380" y="0" width="180" height="30" rx="15" fill="#F2DC91"/>
+      <text x="396" y="19" font-size="10" font-weight="bold" fill="#262D24">▶️ YouTube DIY Upcycle &rarr;</text>
+    </g>
+
+    <!-- Before & After Verification Button (Upgrade 2) -->
+    <g transform="translate(24, 192)">
+      <rect x="0" y="0" width="480" height="42" rx="21" fill="#E5A98C"/>
+      <text x="70" y="26" font-size="13" font-weight="900" fill="#262D24">✅ VERIFY MY ACTION (Compare Before &amp; After) &bull; +100 XP</text>
+
+      <rect x="500" y="0" width="220" height="42" rx="21" fill="#D1FAE5" stroke="#10B981"/>
+      <text x="515" y="25" font-size="10" font-weight="bold" fill="#065F46">🔒 SHA-256 AUDIT VERIFIED</text>
+    </g>
+
+    <!-- Chat Prompt Input Bar -->
+    <rect x="24" y="244" width="640" height="18" rx="9" fill="#F7F3EB"/>
+    <text x="36" y="256" font-size="10" fill="#262D24" opacity="0.5">Type anything... live camera frame will auto-capture on Enter!</text>
+  </g>
+</svg>

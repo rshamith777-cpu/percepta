@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto" style="background:#F7F3EB; border-radius: 24px; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Claymorphism 3D Filters -->
+    <filter id="clay-card" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="8" dy="12" stdDeviation="12" flood-color="#262D24" flood-opacity="0.10" />
+      <feDropShadow dx="-6" dy="-6" stdDeviation="10" flood-color="#FFFFFF" flood-opacity="0.85" />
+    </filter>
+    <filter id="clay-pill" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="4" dy="6" stdDeviation="6" flood-color="#262D24" flood-opacity="0.12" />
+      <feDropShadow dx="-3" dy="-3" stdDeviation="5" flood-color="#FFFFFF" flood-opacity="0.80" />
+    </filter>
+    <linearGradient id="terracotta-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5A98C" />
+      <stop offset="100%" stop-color="#D99273" />
+    </linearGradient>
+    <linearGradient id="sage-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C4D1B8" />
+      <stop offset="100%" stop-color="#B2C2A4" />
+    </linearGradient>
+    <linearGradient id="butter-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2DC91" />
+      <stop offset="100%" stop-color="#E5CC78" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Pattern -->
+  <rect width="1200" height="420" fill="#F7F3EB" rx="24"/>
+  <circle cx="1140" cy="60" r="140" fill="#C4D1B8" opacity="0.18" />
+  <circle cx="80" cy="380" r="160" fill="#E5A98C" opacity="0.15" />
+
+  <!-- Botanical Accents -->
+  <path d="M1060 40 Q1120 70 1150 140 Q1100 160 1060 110 Z" fill="#C4D1B8" opacity="0.35"/>
+  <path d="M60 320 Q120 280 160 310 Q140 360 80 370 Z" fill="#E5A98C" opacity="0.3"/>
+
+  <!-- Header Title -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#262D24" letter-spacing="1.5">PERCEPTA &bull; MULTIMODAL PHYSICAL-WORLD ARCHITECTURE</text>
+  <text x="60" y="92" font-size="14" fill="#262D24" opacity="0.75" font-weight="500">Live Camera Stream &rarr; Nano Banana AR Bullseye &rarr; Dual-Key Failover Engine &rarr; Action Verification Loop</text>
+
+  <!-- Flow Block 1: Camera & Sensor Stream -->
+  <g transform="translate(60, 130)" filter="url(#clay-card)">
+    <rect width="240" height="230" rx="20" fill="url(#sage-grad)"/>
+    <rect x="20" y="20" width="40" height="40" rx="12" fill="#FAF7F0"/>
+    <text x="32" y="47" font-size="20">📷</text>
+    <text x="75" y="44" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#262D24">Camera Stream</text>
+    <text x="20" y="90" font-size="12" font-weight="bold" fill="#262D24">Embodied Perception</text>
+    <text x="20" y="112" font-size="11" fill="#262D24" opacity="0.85">&bull; 720p Sub-Second Stream</text>
+    <text x="20" y="132" font-size="11" fill="#262D24" opacity="0.85">&bull; Hands-Free Auto-Capture</text>
+    <text x="20" y="152" font-size="11" fill="#262D24" opacity="0.85">&bull; Web Speech &amp; Lyria Audio</text>
+    <text x="20" y="172" font-size="11" fill="#262D24" opacity="0.85">&bull; 64px Specimen Journal</text>
+    <rect x="20" y="192" width="200" height="24" rx="12" fill="#FAF7F0" opacity="0.9"/>
+    <text x="35" y="208" font-size="10" font-weight="bold" fill="#262D24">⚡ Dynamic Frame Rate (30 FPS)</text>
+  </g>
+
+  <!-- Connection Arrow 1 -->
+  <g transform="translate(315, 235)">
+    <circle cx="10" cy="10" r="16" fill="#FAF7F0" filter="url(#clay-pill)"/>
+    <path d="M4 10 L14 10 M10 6 L14 10 L10 14" stroke="#262D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Flow Block 2: Multimodal Brain & Failover -->
+  <g transform="translate(350, 130)" filter="url(#clay-card)">
+    <rect width="255" height="230" rx="20" fill="url(#butter-grad)"/>
+    <rect x="20" y="20" width="40" height="40" rx="12" fill="#FAF7F0"/>
+    <text x="30" y="47" font-size="20">🧠</text>
+    <text x="75" y="44" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#262D24">Universal Engine</text>
+    <text x="20" y="90" font-size="12" font-weight="bold" fill="#262D24">Cascade &amp; Dual Failover</text>
+    <text x="20" y="112" font-size="11" fill="#262D24" opacity="0.85">&bull; Primary: Gemini 3.5 / 2.5</text>
+    <text x="20" y="132" font-size="11" fill="#262D24" opacity="0.85">&bull; Open Weights: Gemma 3 27B</text>
+    <text x="20" y="152" font-size="11" fill="#262D24" opacity="0.85">&bull; Fallback: Groq Cloud (Llama)</text>
+    <text x="20" y="172" font-size="11" fill="#262D24" opacity="0.85">&bull; OpenRouter &amp; OpenAI API</text>
+    <rect x="20" y="192" width="215" height="24" rx="12" fill="#FAF7F0" opacity="0.9"/>
+    <text x="32" y="208" font-size="10" font-weight="bold" fill="#262D24">🛡️ Gemma Watchdog (&lt;28ms)</text>
+  </g>
+
+  <!-- Connection Arrow 2 -->
+  <g transform="translate(620, 235)">
+    <circle cx="10" cy="10" r="16" fill="#FAF7F0" filter="url(#clay-pill)"/>
+    <path d="M4 10 L14 10 M10 6 L14 10 L10 14" stroke="#262D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Flow Block 3: Nano Banana AR & Target Pin -->
+  <g transform="translate(655, 130)" filter="url(#clay-card)">
+    <rect width="240" height="230" rx="20" fill="url(#terracotta-grad)"/>
+    <rect x="20" y="20" width="40" height="40" rx="12" fill="#FAF7F0"/>
+    <text x="30" y="47" font-size="20">🎯</text>
+    <text x="75" y="44" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#262D24">Nano Banana AR</text>
+    <text x="20" y="90" font-size="12" font-weight="bold" fill="#262D24">Precision Tracking</text>
+    <text x="20" y="112" font-size="11" fill="#262D24" opacity="0.85">&bull; Target Bullseye (x, y)</text>
+    <text x="20" y="132" font-size="11" fill="#262D24" opacity="0.85">&bull; 3D Tactile Bounding Box</text>
+    <text x="20" y="152" font-size="11" fill="#262D24" opacity="0.85">&bull; Multilingual Dialogue (5 Lang)</text>
+    <text x="20" y="172" font-size="11" fill="#262D24" opacity="0.85">&bull; 1-Click Shopping / Maps / DIY</text>
+    <rect x="20" y="192" width="200" height="24" rx="12" fill="#FAF7F0" opacity="0.9"/>
+    <text x="35" y="208" font-size="10" font-weight="bold" fill="#262D24">📐 0-1000 Sub-Pixel Precision</text>
+  </g>
+
+  <!-- Connection Arrow 3 -->
+  <g transform="translate(910, 235)">
+    <circle cx="10" cy="10" r="16" fill="#FAF7F0" filter="url(#clay-pill)"/>
+    <path d="M4 10 L14 10 M10 6 L14 10 L10 14" stroke="#262D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Flow Block 4: Verification & BigQuery RLHF -->
+  <g transform="translate(945, 130)" filter="url(#clay-card)">
+    <rect width="210" height="230" rx="20" fill="url(#sage-grad)"/>
+    <rect x="20" y="20" width="40" height="40" rx="12" fill="#FAF7F0"/>
+    <text x="30" y="47" font-size="20">⚖️</text>
+    <text x="75" y="44" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#262D24">Verification</text>
+    <text x="20" y="90" font-size="12" font-weight="bold" fill="#262D24">Feedback &amp; RLHF</text>
+    <text x="20" y="112" font-size="11" fill="#262D24" opacity="0.85">&bull; Before vs. After Loop</text>
+    <text x="20" y="132" font-size="11" fill="#262D24" opacity="0.85">&bull; SHA-256 Audit Hashes</text>
+    <text x="20" y="152" font-size="11" fill="#262D24" opacity="0.85">&bull; +100 Brain Bonus XP</text>
+    <text x="20" y="172" font-size="11" fill="#262D24" opacity="0.85">&bull; BigQuery Dataset Export</text>
+    <rect x="20" y="192" width="170" height="24" rx="12" fill="#FAF7F0" opacity="0.9"/>
+    <text x="32" y="208" font-size="10" font-weight="bold" fill="#262D24">📊 RLHF Trajectories Log</text>
+  </g>
+</svg>
